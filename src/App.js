@@ -1,28 +1,20 @@
-import Name from './Name';
-import Data from './Data';
-import './App.css';
+import React from 'react';
+// import ParentComponent from './ParentComponent';
+// import Hotel from './Hotel';
+import photosData from './PhotosData';
+import Photos from './Photos';
 
 const App = () => {
-  const styled = {
-    color: 'blue',
-  };
   return (
-    <>
-      <h1 style={styled} className="head">
-        This is react js
-      </h1>
-      <h2>this is heading 2</h2>
-      <div>
-        <h4>Lorem, ipsum dolor.</h4>
-        <p>8+ 10{8 + 10}</p>
-        {89 * 10}
-      </div>
-      <Name />
-      <Name />
-      <Name />
-      <Name />
-      <Data />
-    </>
+    <div>
+      {photosData.map((eachObj) => {
+        const { id, thumbnailUrl, title, url } = eachObj;
+        return (
+          <Photos id={id} title={title} thumbnailUrl={thumbnailUrl} url={url} />
+        );
+      })}
+    </div>
   );
 };
+
 export default App;
