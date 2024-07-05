@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log('im comming from useeffect');
+  });
+
+  // useEffect(() => {
+  //   console.log('im comming from useeffect');
+  // }, []);
+
+  // useEffect(() => {
+  //   console.log('im comming from useeffect');
+  // }, [count]);
 
   const increment = () => {
     setCount(count + 1);

@@ -11,4 +11,6 @@ const Photos = (props) => {
   );
 };
 
+// https://jsonplaceholder.typicode.com/photos
+
 export default Photos;
