@@ -1,3 +1,17 @@
 .head {
     border: 1px solid green;
 }
+
+.data {
+    border: 2px solid red;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.imgData {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}

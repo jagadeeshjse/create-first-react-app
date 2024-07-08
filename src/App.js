@@ -1,25 +1,28 @@
 import React from 'react';
+import ShowImageData from './ShowImageData';
+import './App.css';
 // import ParentComponent from './ParentComponent';
-import Counter from './Counter';
+// import Counter from './Counter';
 // import DisplayData from './DisplayData';
 // import Hotel from './Hotel';
-import photosData from './PhotosData';
-import Photos from './Photos';
+// import photosData from './PhotosData';
+// import Photos from './Photos';
 // import Form from './Form';
 
 const App = () => {
   return (
     <div>
-      {photosData.map((eachObj) => {
+      {/* {photosData.map((eachObj) => {
         const { id, thumbnailUrl, title, url } = eachObj;
         return (
           <Photos id={id} title={title} thumbnailUrl={thumbnailUrl} url={url} />
         );
-      })}
+      })} */}
       {/* <ParentComponent /> */}
-      <Counter />
+      {/* <Counter /> */}
       {/* <DisplayData /> */}
       {/* <Form /> */}
+      <ShowImageData />
     </div>
   );
 };
