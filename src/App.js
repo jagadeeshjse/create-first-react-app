@@ -1,6 +1,7 @@
 import React from 'react';
-import ShowImageData from './ShowImageData';
+// import ShowImageData from './ShowImageData';
 import './App.css';
+import MealCompoent from './MealCompoent';
 // import ParentComponent from './ParentComponent';
 // import Counter from './Counter';
 // import DisplayData from './DisplayData';
@@ -22,7 +23,8 @@ const App = () => {
       {/* <Counter /> */}
       {/* <DisplayData /> */}
       {/* <Form /> */}
-      <ShowImageData />
+      {/* <ShowImageData /> */}
+      <MealCompoent />
     </div>
   );
 };
